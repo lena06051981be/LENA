@@ -8,6 +8,67 @@ body {
 a {
   text-decoration: none;
 }
+.box {
+
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: tomato;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+     transition-property: background-color, transform;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+
+}
+
+.box:hover {
+  background-color: orange;
+}
+/* При ховере меняем значения анимируемых свойств */
+.box:hover {
+  background-color: teal;
+  transform: rotate(180deg);
+}
+.flex-container {
+  border: 2px dashed #2a2a2a;
+  border-radius: 4px;
+  display: flex;
+  
+  align-items: center;
+  min-height: calc(100vh - 100px);
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 200px;
+  flex-shrink: 0;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+   
+  transition-property: transform;
+  
+
+}
+
+.flex-container:hover .circle {
+  transform: scale(1.5);
+  background-color: #00bcd4;
+  transition-timing-function: ease-in;
+  
+}
+
+.circle:nth-child(1) {
+  background-color: orange;
+
+  transition-duration: 500ms;
+}
 
 
 
